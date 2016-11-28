@@ -1,1 +1,500 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <title>QuadvisionRenaultItalie</title>
+    <link rel="stylesheet" media="all" href="/assets/washer.self-fe836c6b8d0697c4924834c034b4f903fac48e7c49a41087236a6e1e4684e13c.css?body=1" data-turbolinks-track="true" />
+  </head>
+  <body class='main-body'>
+    <div class='nav padding-vertical'>
+      <ul class='nav__item'>
+        <li>
+          <h1>
+            <a class="nav__link" href="/washer?locale=en">WasherCss</a>
+          </h1>
+        </li>
+      </ul>
+    </div>
+    <div class='max-layout-width padding'>
+      <div class='help-section'>
+        <p>Washer Css is a BEM, clean, simple, easy, lightweight, customizable, themable css framework.</p>
+        <p>It's slightly inspired by InuitCSS</p>
+      </div>
+      <div class='help-section'>
+        <h2 class='padding-bottom-tiny'>Structure</h2>
+        <p>There are 4 principal folders inside washer :</p>
+        <ol>
+          <li>settings : defines some constants inside the project. you can redefine basic elements inside a settings/_specific.scss file</li>
+          <li>helpers : basic classes that you can include into your components and that you can use inside your html templates</li>
+          <li>components : components classes (BEM style)</li>
+          <li>base : basic elements styling : can include some helpers</li>
+        </ol>
+      </div>
+      <div class='help-section'>
+        <h2 class='padding-bottom-tiny'>Settings</h2>
+        <p>
+          There is a _defaults.scss file here that you can copy inside your project for
+          further refinement. You can change the constants (for color customization for
+          example).
+        </p>
+      </div>
+      <div class='help-section'>
+        <h2 class='padding-bottom-tiny'>Helpers</h2>
+        <p>
+          This is the helpers of the project, some basic classes you can add to your
+          components, to your basic elements (in a balanced way), and that you can use
+          directly inside your markup.
+        </p>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Alignement.scss</h3>
+        <p>
+          This file is all about aligning elements. It's intensively used inside
+          the markup.
+        </p>
+        <div class='example'>
+          <div class="margin-auto border padding" style="width:200px">I'm centered with a margin-auto class and a width of 400px</div>
+        </div>
+        <div class='example'>
+          <div class="margin-auto border padding" style="width:400px">I'm centered with a margin-auto class and a width of 600px</div>
+        </div>
+        <div class='example'>
+          <div class="text--center">This text is centered</div>
+        </div>
+        <div class='example'>
+          <div class="text--right">This text is right aligned</div>
+        </div>
+        <div class='example'>
+          <div class="text--left">This text is left aligned</div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Background.scss</h3>
+        <p>
+          This file contains background colors as classes you can include into your
+          components
+        </p>
+        <div class='example'>
+          <p class="padding background--light">That's a light background color</p>
+        </div>
+        <div class='example'>
+          <p class="padding background--yellow">That's a yellow background color</p>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Border.scss</h3>
+        <div class='example'>
+          <div class="border padding">I have a basic "border" class</div>
+        </div>
+        <div class='example'>
+          <div class="border border--large padding">I have a basic "border" class with a large "border--large" modifier</div>
+        </div>
+        <div class='example'>
+          <div class="border-bottom padding">I have a basic "border-bottom" class</div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Color.scss</h3>
+        <div class='example'>
+          <div class="primary padding">I have a basic "primary" color class corresponding to the $primary-color constant (that you can redefine)</div>
+        </div>
+        <div class='example'>
+          <div class="secondary padding">I have a basic "secondary" color class corresponding to the $secondary-color constant (that you can redefine)</div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Flex.scss</h3>
+        <div class='flex flex-space-between'>
+          <div class='padding'>
+            Some
+          </div>
+          <div class='padding'>
+            Flex
+          </div>
+          <div class='padding'>
+            Elements
+          </div>
+          <div class='padding'>
+            With
+          </div>
+          <div class='padding'>
+            Space
+          </div>
+          <div class='padding'>
+            Between
+          </div>
+        </div>
+        <div class='flex flex-space-around'>
+          <div class='padding'>
+            Some
+          </div>
+          <div class='padding'>
+            Flex
+          </div>
+          <div class='padding'>
+            Elements
+          </div>
+          <div class='padding'>
+            With
+          </div>
+          <div class='padding'>
+            Space
+          </div>
+          <div class='padding'>
+            Around
+          </div>
+        </div>
+        <div class='flex flex-space-between flex-align-items-center'>
+          <div class='padding'>
+            Some
+          </div>
+          <div class='padding'>
+            Flex
+          </div>
+          <div class='padding'>
+            Elements
+          </div>
+          <div class='padding'>
+            With
+          </div>
+          <div class='padding'>
+            Space
+          </div>
+          <div class='padding'>
+            Between
+          </div>
+          <div class='padding flex-1 text--right'>
+            And one element taking the rest of the place.
+          </div>
+        </div>
+        <div class='flex flex-space-between'>
+          <div class='padding'>
+            Some
+          </div>
+          <div class='padding'>
+            Flex
+          </div>
+          <div class='padding'>
+            Elements
+          </div>
+          <div class='padding'>
+            With
+          </div>
+          <div class='padding flex__item--center'>
+            Space
+          </div>
+          <div class='padding'>
+            Between
+          </div>
+          <div class='padding flex-1 text--right'>
+            And one element taking the rest of the place (only space element is vertical aligned).
+          </div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Font-sizes.scss (responsive !)</h3>
+        <div class='text--center'>
+          <div class="biggest">I use the class "biggest"</div>
+          <div class="alpha">I use the class "alpha"</div>
+          <div class="beta">I use the class "beta"</div>
+          <div class="gamma">I use the class "gamma"</div>
+          <div class="delta">I use the class "delta"</div>
+          <div class="epsilon">I use the class "epsilon"</div>
+          <div class="zeta">I use the class "zeta"</div>
+          <div class="eta">I use the class "eta"</div>
+          <div class="theta">I use the class "theta"</div>
+          <div class="iota">"iota" you read me ?</div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>General.scss</h3>
+        <div class='text--center'>
+          <div class='example'>
+            <div class="inline-block round strong uppercase border padding">I have the "round", "strong" and "uppercase" classes</div>
+          </div>
+          <div class='example'>
+            <div class="padding whole-width inline-block border">I am an inline-block div with the "whole-width" class</div>
+          </div>
+          <div class='example'>
+            <div class="padding inline-block border">I am an inline-block div <b>without</b> the "whole-width" class</div>
+          </div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Max-width.scss</h3>
+        <div class="border padding max-button-width">I have the class "max-button-width"</div>
+        <div class="border padding max-sign-width">I have the class "max-sign-width"</div>
+        <div class="border padding max-form-width">I have the class "max-form-width"</div>
+        <div class="border padding max-readable-width">I have the class "max-readable-width"</div>
+        <div class="border padding max-layout-width">I have the class "max-layout-width"</div>
+        <div class="border padding max-screen-width">I have the class "max-screen-width" which is bigger than this layout width</div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Spacing.scss</h3>
+        <div class="border padding-left-large">I have the class "padding-left-large", you can include this class inside your components</div>
+        <div class="border margin-right-small">I have the class "margin-right-small", you can include this class inside your components</div>
+        <div class="border padding">I have the class "padding", you can include this class inside your components</div>
+        <div class="border margin-top">I have the class "margin-top", you can include this class inside your components</div>
+        <div class="border padding-vertical-large-lap-and-up">I have the class "padding-vertical-large-lap-and-up", you can include this class inside your components</div>
+        <div class="border padding-vertical-small-palm padding-vertical-large-lap-and-up">I have the class "padding-vertical-small-palm" and the class "padding-vertical-large-lap-and-up", you can include this class inside your components</div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Widths.scss is mainly used inside the .layout component. For more documentation go to this component.</h3>
+      </div>
+      <div class='help-section'>
+        <h2 class='padding-bottom-tiny'>Components</h2>
+        <p>
+          This folder is a BEM-style components list. It's quite simple to integrate.
+          To explain BEM (block element modifier) in a minute :
+        </p>
+        <p>
+          Block is an block that you define. For example a nav. So inside your markup you'll have a div with the class "nav"
+        </p>
+        <p>
+          Then you have an element : an element inside a block (let's take a layout item), we'll call it .layout__item. If it's a link inside the layout, the name is .layout__link (.{block}__{element})
+        </p>
+        <p>
+          And a modifier : a class we can add to change a block (layout--tiny) or an element (layout__item--big). Here the "big" modifier is an example that doesn't exist in Washer.
+        </p>
+        <p>
+          Keep in mind that nothing is cascading in the BEM model. We try to do css as BUILDING BLOCKS for html that are not coupled to older css.
+        </p>
+        <p>
+          Look at the layout component for an example of a great component
+        </p>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Alerts</h3>
+        <div class='error padding'>
+          Error alert
+        </div>
+        <div class='notice padding'>
+          Notice alert
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Badge</h3>
+        <div class='example'>
+          <p class='padding background--yellow'>I have <span class="badge">6</span> bananas</p>
+        </div>
+        <div class='example'>
+          <p class='padding'>I have <span class="badge badge--colored">70</span> bananas</p>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>box</h3>
+        <div class='example'>
+          <div class='box box--shadow-bottom padding'>
+            I'm shadowed, and I got the "box--shadow-bottom" class
+          </div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Button</h3>
+        <div class='example'>
+          <div class='btn'>
+            Click me, I'm famous for my "btn" class
+          </div>
+        </div>
+        <div class='example'>
+          <div class='btn'>
+            <div class='btn__icon-left'>
+              <div class='icon-arrow-left'></div>
+            </div>
+            Click me, I'm famous for my "btn" class and my .btn__icon-left inside me
+          </div>
+        </div>
+        <div class='example'>
+          <div class='btn'>
+            Click me, I'm famous for my "btn" class and my .btn__icon-right inside me
+            <div class='btn__icon-right'>
+              <div class='icon-cart'></div>
+            </div>
+          </div>
+        </div>
+        <div class='example'>
+          <div class='btn btn--secondary'>
+            I'm secondary ('btn--secondary')
+          </div>
+        </div>
+        <div class='example'>
+          <div class='btn btn--reverse-colors'>
+            I'm reverse ('btn--reverse-colors')
+          </div>
+        </div>
+        <div class='example'>
+          <div class='btn btn--large'>
+            I'm large ('btn--large')
+          </div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Form</h3>
+        <div class='max-form-width border'>
+          <div class='padding'>
+            <label class="lbl">Username</label>
+            <input type="text" name="blahblah" class="npt"/>
+            <div class='padding-bottom'></div>
+            <label class="lbl">Password</label>
+            <input type="password" name="blahblah" class="npt"/>
+          </div>
+        </div>
+        <div class='padding-top'></div>
+        <div class='max-form-width border'>
+          <div class='padding'>
+            <span class='icon-loupe relative'></span>
+            <span class='margin-left-negative'></span>
+            <input class='round npt npt--search' placeholder='Search...' type='text'>
+          </div>
+        </div>
+      </div>
+      <div class='help-section'>
+        <h3 class='padding-bottom-tiny'>Layout</h3>
+        <div class='notice padding margin-bottom'>
+          <p>WARNING ! The .layout__item elements should not have anything between them, due to the inline-block design. In Haml, you can just add a &gt; at the end of a .layout__item</p>
+        </div>
+        <div class='layout layout--middle'><div class='layout__item width-1-3'>
+            <div class='padding border'>
+              You can have
+            </div>
+          </div><div class='layout__item width-1-3'>
+            <div class='padding border'>
+              multiple
+            </div>
+          </div><div class='layout__item width-1-3'>
+            <div class='padding border'>
+              columns
+            </div>
+          </div></div>
+        <div class='padding'></div>
+        <div class='layout layout--tiny layout--middle'><div class='layout__item width-1-3'>
+            <div class='padding border'>
+              You can have beautifully vertically centered items with
+            </div>
+          </div><div class='layout__item width-1-3'>
+            <div class='padding border'>
+              tiny
+            </div>
+          </div><div class='layout__item width-1-3'>
+            <div class='padding border'>
+              gutters
+            </div>
+          </div></div>
+        <div class='padding'></div>
+        <div class='layout layout--flush layout--borders'><div class='layout__item width-1-3'>
+            <div class='padding'>
+              You can have
+            </div>
+          </div><div class='layout__item width-1-3'>
+            <div class='padding'>
+              even
+            </div>
+          </div><div class='layout__item width-1-3'>
+            <div class='padding'>
+              no gutter at all
+            </div>
+          </div></div>
+        <div class='padding'></div>
+        <div class='layout'><div class='layout__item width-1-4-lap-and-up width-1-2-palm'>
+            <div class='padding border'>
+              You can have
+            </div>
+          </div><div class='layout__item width-1-4-lap-and-up width-1-2-palm'>
+            <div class='padding border'>
+              multiple
+            </div>
+          </div><div class='layout__item width-1-4-lap-and-up width-1-2-palm'>
+            <div class='padding border'>
+              responsive
+            </div>
+          </div><div class='layout__item width-1-4-lap-and-up width-1-2-palm'>
+            <div class='padding border'>
+              columns
+            </div>
+          </div></div>
+        <div class='padding'></div>
+        <div class='layout'><div class='layout__item width-1-4'>
+            <div class='padding border'>
+              You can of course
+            </div>
+          </div><div class='layout__item width-3-4'>
+            <div class='layout'><div class='layout__item width-1-5'>
+                <div class='padding border'>
+                  Nest
+                </div>
+              </div><div class='layout__item width-1-5'>
+                <div class='padding border'>
+                  As Much
+                </div>
+              </div><div class='layout__item width-1-5'>
+                <div class='padding border'>
+                  Grids
+                </div>
+              </div><div class='layout__item width-1-5'>
+                <div class='layout'><div class='layout__item width-1-2'>
+                    <div class='padding-vertical padding-left-small border'>
+                      As
+                    </div>
+                  </div><div class='layout__item width-1-2'>
+                    <div class='padding-vertical padding-left-tiny border'>
+                      You
+                    </div>
+                  </div></div>
+              </div><div class='layout__item width-1-5'>
+                <div class='padding border'>
+                  Want
+                </div>
+              </div></div>
+          </div></div>
+      </div>
+      <div class='help-section'>
+        <h2 class='padding-bottom-tiny'>Base</h2>
+        <p>
+          In the base folder, there are the only modified basic elements, including the
+          reset, the links and the headings
+        </p>
+        <ul>
+          <li>
+            in the reset, there is some basic styling to be have consistant behavior into
+            basic elements styling.
+          </li>
+          <li>
+            In the headings, there are basic styling of h1-h6 elements, based on the
+            font-sizes helper
+          </li>
+        </ul>
+      </div>
+      <div class='padding'>
+        <h2></h2>
+      </div>
+    </div>
+    <div class='background--grey'>
+      <div class='nav padding-vertical'>
+        <ul class='nav__item'>
+          <li>
+            <a class='nav__link'>
+              If you like it
+            </a>
+          </li>
+          <li>
+            <a class='nav__link'>
+              Don't hesitate to
+            </a>
+          </li>
+          <li>
+            <a class='nav__link' href='mailto:thibaut@milerock.com'>
+              Contact us
+            </a>
+          </li>
+        </ul>
+        <ul class='nav__item'>
+          <li>
+            <a class='nav__link'>
+              © 2016 Cosmic / Milesrock / Bemioz
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
